@@ -15,15 +15,15 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] w-fit"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5 inline" />
+          <h1 className="Welcome-text text-[13px] inline">
             Data Science & AI Enthusiast
           </h1>
         </motion.div>
@@ -35,7 +35,7 @@ export const HeroContent = () => {
           <span className="text-3xl md:text-4xl font-semibold text-gray-300">
             Hey there! <span className="inline-block">👋</span>
           </span>
-          <span className="text-5xl md:text-6xl font-bold text-white tracking-wide mt-2">
+          <span className="text-4xl md:text-6xl font-bold text-white tracking-wide mt-2">
             I'm{" "}
             <span className="font-serif italic tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-cyan-400 to-blue-500 drop-shadow-[0_0_20px_rgba(168,85,247,0.4)]">
               Aryan
@@ -64,9 +64,9 @@ export const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full h-full flex justify-center items-center mt-10 md:mt-0"
       >
-        <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-[#7042f88b] shadow-[0_0_40px_rgba(112,66,248,0.5)]">
+        <div className="relative w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-[#7042f88b] shadow-[0_0_40px_rgba(112,66,248,0.5)]">
           <Image
             src="/profile.png"
             alt="Aryan Kumar"
